@@ -49,3 +49,5 @@ In [neuroseg2](https://github.com/XZH-James/NeuroSeg2/tree/main/NeuroSeg%E2%85%A
 
 ### **Code of preprocessing** 
 In [utilities](https://github.com/XZH-James/NeuroSeg2/tree/main/NeuroSeg%E2%85%A1-main/NeuroSeg%E2%85%A1-main/utilities) are the code for preprocessing.  
+
+If you have any questions about this project, please feel free to contact us. Email address: zhehao_xu@qq.com
