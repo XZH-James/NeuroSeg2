@@ -204,7 +204,7 @@ data_set = 'Neurofinder'
 
 # test dataset
 dataset_test = ShapesDataset()
-dataset_test.get_path(root_path='./', data_path=data_set, imageset='test5')
+dataset_test.get_path(root_path='./', data_path=data_set, imageset='test')
 dataset_test.load_image_set_index()
 dataset_test.load_shapes()
 dataset_test.prepare()

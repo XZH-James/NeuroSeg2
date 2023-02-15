@@ -1752,7 +1752,10 @@ class NeuroSeg():
             KL.Conv2D(config.TOP_DOWN_PYRAMID_SIZE, (1, 1), name='fpn_c6')(C6)
         ])
 
-        P5 = KL.Conv2D(config.TOP_DOWN_PYRAMID_SIZE, (1, 1), name='fpn_conc5')(C5)
+        P5 = KL.Add(name='fpn_p5')([
+            KL.UpSampling2D(size=(2, 2), name="fpn_c6upsampled")(P6),
+            KL.Conv2D(config.TOP_DOWN_PYRAMID_SIZE, (1, 1), name='fpn_conc5')(C5)
+        ])
 
         P4 = KL.Add(name="fpn_p4")([
             KL.UpSampling2D(size=(2, 2), name="fpn_p5upsampled")(P5),
